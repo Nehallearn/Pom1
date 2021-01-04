@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Default suite]" duration-ms="19713" started-at="2021-01-04T19:16:43 GMT" finished-at="2021-01-04T19:17:03 GMT">
+    <groups>
+    </groups>
+    <test name="Default test(failed)" duration-ms="19713" started-at="2021-01-04T19:16:43 GMT" finished-at="2021-01-04T19:17:03 GMT">
+      <class name="com.app.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.app.testcases.LoginPageTest@3b088d51]" name="setup" is-config="true" duration-ms="12576" started-at="2021-01-04T19:16:44 GMT" finished-at="2021-01-04T19:16:56 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:3, instance:com.app.testcases.LoginPageTest@3b088d51]" name="login" duration-ms="5398" started-at="2021-01-04T19:16:56 GMT" finished-at="2021-01-04T19:17:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.app.testcases.LoginPageTest@3b088d51]" name="tearDown" is-config="true" duration-ms="1565" started-at="2021-01-04T19:17:02 GMT" finished-at="2021-01-04T19:17:03 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.app.testcases.LoginPageTest -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
+</testng-results>
