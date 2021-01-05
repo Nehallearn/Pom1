@@ -7,13 +7,17 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.app.utils.TestUtils;
+import com.app.utils.WebEventListener;
 
 public class BaseClass {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static EventFiringWebDriver e_driver;
+	public static WebEventListener eventlistener;
 	
 	public BaseClass()
 	{
@@ -54,6 +58,12 @@ public class BaseClass {
 		{
 			System.out.println("Please setup correct browser name in Properties file");
 		}
+		
+		e_driver = new EventFiringWebDriver(driver);
+		eventlistener = new WebEventListener();
+		e_driver.register(eventlistener);
+		driver = e_driver;
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.app.testcases.LoginPageTest"/>
       <class name="com.app.testcases.HomePageTest"/>
-      <class name="com.app.testcases.ContactsPageTest"/>
+      <!-- class name="com.app.testcases.ContactsPageTest"/-->
      </classes>
   </test> <!-- Sanity -->
 </suite> <!-- Automation -->

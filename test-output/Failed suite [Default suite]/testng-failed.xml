@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="com.app.testcases.HomePageTest">
+      <class name="com.app.testcases.ContactsPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="createNewContact"/>
           <include name="setup"/>
-          <include name="clickonContactLink"/>
-          <include name="clickonDealsLink"/>
         </methods>
-      </class> <!-- com.app.testcases.HomePageTest -->
+      </class> <!-- com.app.testcases.ContactsPageTest -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

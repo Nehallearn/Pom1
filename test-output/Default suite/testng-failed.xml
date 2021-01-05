@@ -6,8 +6,8 @@
       <class name="com.app.testcases.ContactsPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="createNewContact"/>
           <include name="setup"/>
-          <include name="clickonContactCheckbox"/>
         </methods>
       </class> <!-- com.app.testcases.ContactsPageTest -->
     </classes>
