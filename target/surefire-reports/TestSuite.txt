@@ -1,4 +1,80 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 135.384 s - in TestSuite
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 16, Time elapsed: 49.876 s <<< FAILURE! - in TestSuite
+setup(com.app.testcases.HomePageTest)  Time elapsed: 18.186 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D96Q9MV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0125C0C3+3326147]
+	Ordinal0 [0x01140851+2164817]
+	Ordinal0 [0x00FC7140+618816]
+	Ordinal0 [0x00FBD404+578564]
+	Ordinal0 [0x00FBDACB+580299]
+	Ordinal0 [0x00FBED35+585013]
+	Ordinal0 [0x00FB9D61+564577]
+	Ordinal0 [0x00FC82C0+623296]
+	Ordinal0 [0x00F66BDD+224221]
+	Ordinal0 [0x00F65CAC+220332]
+	Ordinal0 [0x00F6189B+202907]
+	Ordinal0 [0x00F43DF4+81396]
+	Ordinal0 [0x00F44DEE+85486]
+	Ordinal0 [0x00F44D79+85369]
+	Ordinal0 [0x011585DC+2262492]
+	GetHandleVerifier [0x013E2874+1487204]
+	GetHandleVerifier [0x013E23CD+1486013]
+	GetHandleVerifier [0x013EA368+1518680]
+	GetHandleVerifier [0x013E2F4E+1488958]
+	Ordinal0 [0x0114ED0D+2223373]
+	Ordinal0 [0x0115A12B+2269483]
+	Ordinal0 [0x0115A26F+2269807]
+	Ordinal0 [0x0116ECB8+2354360]
+	BaseThreadInitThunk [0x7734FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C175F4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C175C4+180]
+
+	at com.app.testcases.HomePageTest.setup(HomePageTest.java:32)
+
+setup(com.app.testcases.LoginPageTest)  Time elapsed: 32.319 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D96Q9MV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0125C0C3+3326147]
+	Ordinal0 [0x01140851+2164817]
+	Ordinal0 [0x00FC7140+618816]
+	Ordinal0 [0x00FBD404+578564]
+	Ordinal0 [0x00FBDACB+580299]
+	Ordinal0 [0x00FBED35+585013]
+	Ordinal0 [0x00FB9D61+564577]
+	Ordinal0 [0x00FC82C0+623296]
+	Ordinal0 [0x00F66BDD+224221]
+	Ordinal0 [0x00F65CAC+220332]
+	Ordinal0 [0x00F6189B+202907]
+	Ordinal0 [0x00F43DF4+81396]
+	Ordinal0 [0x00F44DEE+85486]
+	Ordinal0 [0x00F44D79+85369]
+	Ordinal0 [0x011585DC+2262492]
+	GetHandleVerifier [0x013E2874+1487204]
+	GetHandleVerifier [0x013E23CD+1486013]
+	GetHandleVerifier [0x013EA368+1518680]
+	GetHandleVerifier [0x013E2F4E+1488958]
+	Ordinal0 [0x0114ED0D+2223373]
+	Ordinal0 [0x0115A12B+2269483]
+	Ordinal0 [0x0115A26F+2269807]
+	Ordinal0 [0x0116ECB8+2354360]
+	BaseThreadInitThunk [0x7734FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C175F4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C175C4+180]
+
+	at com.app.testcases.LoginPageTest.setup(LoginPageTest.java:30)
+
