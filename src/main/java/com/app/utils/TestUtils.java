@@ -26,5 +26,23 @@ public class TestUtils extends BaseClass{
 		String datetime = new SimpleDateFormat("YYYY-MM-DD-HHMMSS").format(new Date());
 		FileUtils.copyFile(src, new File("C:\\Users\\nehal\\eclipse-workspace\\TestAutomation1\\Screenshots\\"+"test"+datetime+".png"));
 	}
+	public static String takeScreenshotasbase64() throws Exception
+	{
+		String src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
+		return src;
+	}
+	
+	public static String getExtentReportPath()
+	{
+		if(prop.getProperty("overridereports").equalsIgnoreCase("yes"))
+		{
+			
+			return  "C:\\Users\\nehal\\eclipse-workspace\\TestAutomation1\\extentreport-output\\"+ System.currentTimeMillis()+"index.html";
+		}
+		else
+		{
+			return  "C:\\Users\\nehal\\eclipse-workspace\\TestAutomation1\\extentreport-output\\index.html";
+		}
+	}
 
 }
