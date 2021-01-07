@@ -1,0 +1,14 @@
+com\app\utils\GetDataUtility.class
+com\app\pages\LoginPage.class
+com\app\reports\ExtentLogger.class
+com\app\pages\ContactsPage.class
+com\app\pages\RegistrationPage.class
+com\app\utils\TestUtils.class
+com\app\pages\DealsPage.class
+com\app\base\BaseClass.class
+com\app\reports\ExtentReport.class
+com\app\utils\ListenerClass.class
+com\app\utils\WebEventListener.class
+com\app\pages\HomePage.class
+com\app\utils\ExcelReader.class
+com\app\reports\ExtentManager.class

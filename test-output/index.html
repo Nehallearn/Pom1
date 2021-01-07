@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Automation">
-              <span class="suite-name border-passed">Automation</span>
+              <span class="suite-name border-failed">Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation" class="hide-methods failed suite-Automation"> (hide)</a> <!-- hide-methods failed suite-Automation -->
+                      <a href="#" panel-name="suite-Automation" class="show-methods failed suite-Automation"> (show)</a> <!-- show-methods failed suite-Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.app.testcases.HomePageTest" hash-for-method="loggeduserValidation">loggeduserValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,11 +122,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.app.testcases.HomePageTest" hash-for-method="clickonDealsLink">clickonDealsLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.app.testcases.HomePageTest" hash-for-method="loggeduserValidation">loggeduserValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,6 +156,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Automation" class="panel Automation">
+          <div class="suite-Automation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.app.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loggeduserValidation">
+                  </a> <!-- loggeduserValidation -->
+                  <span class="method-name">loggeduserValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [  User: Learnfirst Learnlast] but found [  User: XLearnfirst Learnlast]
+	at com.app.testcases.HomePageTest.loggeduserValidation(HomePageTest.java:53)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation-class-failed -->
           <div class="suite-Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -165,13 +193,6 @@
                   <a name="clickonDealsLink">
                   </a> <!-- clickonDealsLink -->
                   <span class="method-name">clickonDealsLink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loggeduserValidation">
-                  </a> <!-- loggeduserValidation -->
-                  <span class="method-name">loggeduserValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -272,36 +293,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.app.testcases.LoginPageTest')
-data.setCell(0, 3, 6069);
+data.setCell(0, 3, 5924);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickonContactLink')
+data.setCell(1, 1, 'clickonDealsLink')
 data.setCell(1, 2, 'com.app.testcases.HomePageTest')
-data.setCell(1, 3, 2790);
+data.setCell(1, 3, 2900);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickonDealsLink')
+data.setCell(2, 1, 'clickonContactLink')
 data.setCell(2, 2, 'com.app.testcases.HomePageTest')
-data.setCell(2, 3, 2343);
+data.setCell(2, 3, 2832);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'logovalidation')
 data.setCell(3, 2, 'com.app.testcases.LoginPageTest')
-data.setCell(3, 3, 290);
+data.setCell(3, 3, 358);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loggeduserValidation')
 data.setCell(4, 2, 'com.app.testcases.HomePageTest')
-data.setCell(4, 3, 235);
+data.setCell(4, 3, 289);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginPagetitleTest')
 data.setCell(5, 2, 'com.app.testcases.LoginPageTest')
-data.setCell(5, 3, 89);
+data.setCell(5, 3, 108);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyHomePageTitle')
 data.setCell(6, 2, 'com.app.testcases.HomePageTest')
-data.setCell(6, 3, 30);
+data.setCell(6, 3, 45);
 window.suiteTableData['Automation']= { tableData: data, tableDiv: 'times-div-Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Automation">
               </div> <!-- times-div-Automation -->
             </div> <!-- times-div -->
@@ -334,98 +355,100 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPagetitleTest</span>
-                <span class="method-start">11395 ms</span>
+                <span class="method-start">11839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12676 ms</span>
+                <span class="method-start">13453 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.app.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14334 ms</span>
+                <span class="method-start">14741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitle</span>
-                <span class="method-start">29575 ms</span>
+                <span class="method-start">30500 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30124 ms</span>
+                <span class="method-start">31086 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.app.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31813 ms</span>
+                <span class="method-start">32780 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logovalidation</span>
-                <span class="method-start">41767 ms</span>
+                <span class="method-start">42889 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43204 ms</span>
+                <span class="method-start">44603 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.app.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">44336 ms</span>
+                <span class="method-start">46339 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loggeduserValidation</span>
-                <span class="method-start">59616 ms</span>
+                <span class="method-start">62415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60270 ms</span>
+                <span class="method-start">63260 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.app.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">62118 ms</span>
+                <span class="method-start">65510 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">71946 ms</span>
+                <span class="method-start">75907 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">78475 ms</span>
+                <span class="method-start">82233 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.app.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">80435 ms</span>
+                <span class="method-start">83739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickonContactLink</span>
-                <span class="method-start">96003 ms</span>
+                <span class="method-start">99819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">99211 ms</span>
+                <span class="method-start">103015 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">100694 ms</span>
+                <span class="method-start">104403 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickonDealsLink</span>
-                <span class="method-start">116573 ms</span>
+                <span class="method-start">120613 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">119329 ms</span>
+                <span class="method-start">123922 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -10,7 +10,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyHomePageTitle"/>
+          <include name="loggeduserValidation"/>
         </methods>
       </class> <!-- com.app.testcases.HomePageTest -->
     </classes>
