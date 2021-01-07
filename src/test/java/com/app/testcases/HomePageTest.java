@@ -33,6 +33,7 @@ public class HomePageTest extends BaseClass {
 		testutil = new TestUtils();
 		loginpage = new LoginPage();
 		homepage = loginpage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		logger.info("Log4j> Initilization steps completed successfully");
 	}
 	
 	@Test(priority=1)
@@ -40,6 +41,7 @@ public class HomePageTest extends BaseClass {
 	{
 		String title = homepage.verifyHomepagetitle();
 		System.out.println(title);
+		logger.info("Log4j> Homepagetitle verified");
 		Assert.assertEquals(title,"CRMPRO","Home page title is not matching please check." );
 		
 		
@@ -51,6 +53,7 @@ public class HomePageTest extends BaseClass {
 		testutil.frame();
 		String user = homepage.verifyLoggedUser();
 		Assert.assertEquals("  User: Learnfirst Learnlast", user);
+		logger.info("Log4j> Logged in user verified");
 		
 	}
 	
@@ -60,6 +63,7 @@ public class HomePageTest extends BaseClass {
 	{
 		testutil.frame();
 		contactspage = homepage.clickOnContactsLink();
+		logger.info("Log4j> Contact link is clicked");
 		
 	}
 	

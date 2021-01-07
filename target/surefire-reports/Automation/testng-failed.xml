@@ -10,20 +10,9 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyHomePageTitle"/>
-          <include name="clickonContactLink"/>
           <include name="clickonDealsLink"/>
-          <include name="loggeduserValidation"/>
         </methods>
       </class> <!-- com.app.testcases.HomePageTest -->
-      <class name="com.app.testcases.LoginPageTest">
-        <methods>
-          <include name="logovalidation"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- com.app.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Sanity(failed) -->
 </suite> <!-- Failed suite [Automation] -->
