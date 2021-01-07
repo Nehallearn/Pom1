@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Automation]">
+  <listeners>
+    <listener class-name="com.app.utils.ListenerClass"/>
+  </listeners>
   <test thread-count="5" name="Sanity(failed)">
     <classes>
-      <class name="com.app.testcases.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- com.app.testcases.LoginPageTest -->
       <class name="com.app.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="verifyHomePageTitle"/>
-          <include name="clickonContactLink"/>
-          <include name="clickonDealsLink"/>
-          <include name="loggeduserValidation"/>
         </methods>
       </class> <!-- com.app.testcases.HomePageTest -->
     </classes>

@@ -1,13 +1,17 @@
 package com.app.testcases;
 
-import org.junit.Assert;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.app.base.BaseClass;
 import com.app.pages.HomePage;
 import com.app.pages.LoginPage;
+import com.app.reports.ExtentReport;
 
 public class LoginPageTest extends BaseClass {
 	
@@ -17,6 +21,8 @@ public class LoginPageTest extends BaseClass {
 	{
 		super();
 	}
+	
+	
 	
 	@BeforeMethod
 	public void setup()
@@ -28,6 +34,7 @@ public class LoginPageTest extends BaseClass {
 	@Test(priority=1)
 	public void loginPagetitleTest()
 	{
+		//ExtentReport.creaTest("loginPagetitleTest");
 		String title = loginpage.getLoginPageTitile();
 		System.out.println(title);
 		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
@@ -37,6 +44,7 @@ public class LoginPageTest extends BaseClass {
 	@Test(priority=2)
 	public void logovalidation()
 	{
+		//ExtentReport.creaTest("logovalidation");
 		boolean b = loginpage.verifyLogo();
 		Assert.assertTrue(b);
 	
@@ -45,6 +53,7 @@ public class LoginPageTest extends BaseClass {
     @Test(priority=3)
     public void login()
     {
+    	//ExtentReport.creaTest("login");
     	homepage = loginpage.Login(prop.getProperty("username"), prop.getProperty("password"));
     }
 	
